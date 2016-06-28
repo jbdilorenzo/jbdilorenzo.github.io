@@ -1,0 +1,79 @@
+
+nav {
+	display: table;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+
+	transition: 1.5s;
+	-o-transition: 1.5s;
+	-ms-transition: 1.5s;
+	-moz-transition: 1.5s;
+	-webkit-transition: 1.5s;
+
+	z-index: 100;
+}
+nav.extended { height: 100px; }
+nav.shrunk { height: 65px; }
+
+#navListContainer {
+	display: table-cell;
+	font-weight: 100;
+	height: 100%;
+	padding-right: 50px;
+	text-align: right;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 70vw;
+}
+.nav-list {
+	line-height: normal;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-list-item {
+	display: inline-block;
+	height: calc(100% - 20px);
+	list-style-type: none;
+	margin: 0px 0;
+	padding: 5px 15px;
+	vertical-align: middle;
+
+	transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+.nav-list-item:hover {
+	background-color: #9ebde5;
+}
+.nav-list-item.current-view {
+	border-bottom: 3px solid #fd5c4a;
+	padding-bottom: 2px;
+}
+.nav-list-item > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#companyName {
+	display: table-cell;
+	font-family: 'Century Gothic';
+	font-weight: 100;
+	height: 100%;
+	min-width: 360px;
+	text-align: center;
+	vertical-align: bottom;
+	width: 30vw;
+}
+#companyName > span.subtext {
+	color: rgba(196, 115, 26, 0.4);
+	display: block;
+	font-size: 0.5em;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 0.25em;
+	margin-bottom: 10px;
+}
