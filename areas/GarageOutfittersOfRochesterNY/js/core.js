@@ -45,7 +45,7 @@ function buildNavMenu() {
 		var id = $(element).attr('id');
 
 		if (id !== undefined) {
-			var navItemHtml = '<li class="nav-list-item" id="nav-item-' + id + '"><a href="#' + id + '">' + id + '</a></li>';
+			var navItemHtml = '<li class="nav-list-item" id="nav-item-' + id + '"><a href="#' + id + '">' + id.replace('_', ' ') + '</a></li>';
 			$('.nav-list').append(navItemHtml);
 		}
 	});
